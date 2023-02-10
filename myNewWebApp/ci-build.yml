@@ -18,7 +18,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/myNewWebApp.csproj'
+  solution: '**/$(projectName).csproj'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
