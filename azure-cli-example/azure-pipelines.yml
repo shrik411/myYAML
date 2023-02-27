@@ -1,0 +1,13 @@
+pool: default
+
+steps:
+- task: UsePythonVersion@0
+  condition: false
+  inputs:
+      versionSpec: '3.x'
+      architecture: 'x64'
+
+- bash: python -m pip install --upgrade pip
+  condition: false
+  displayName: 'Upgrade pip'
+  
